@@ -23,7 +23,7 @@ function filtrarPorPrecio(){
     if (resultado.length > 0){
         let clave = prompt("Ingrese el producto que quiere").trim().toUpperCase()
         let resultado1 = resultado.filter((producto) => producto.nombre.toUpperCase().includes(clave))
-        while(clave === "" || !isNaN(clave)){
+        while(clave === ""){
             clave = prompt("Ingrese el producto que quiere").trim().toUpperCase()
         }
         if (resultado1.length > 0){
