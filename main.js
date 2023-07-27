@@ -49,7 +49,7 @@ let lista2 = filtrarPorPrecio()
 let producto = ""
 
 function comprar(lista2){
-    let compra = prompt("Que desea comprar (sea especifico, por favor)")
+    let compra = prompt("Que desea comprar (sea especifico, por favor)").toLowerCase()
     if (compra != ""){
         producto = lista2.find((i) => i.nombre === compra);
     }else{
